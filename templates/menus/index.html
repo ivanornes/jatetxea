@@ -1,0 +1,9 @@
+{% if latest_menu_list %}
+    <ul>
+    {% for menu in latest_menu_list %}
+        <li><a href="{% url menus.views.detail menu.id %}">{{ menu.titulo }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay menus disponibles.</p>
+{% endif %}
