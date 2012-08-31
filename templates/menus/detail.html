@@ -6,7 +6,6 @@
 {% csrf_token %}
 {% for plato in menu.plato_set.all %}
     <input type="radio" name="plato" id="plato{{ forloop.counter }}" value="{{ plato.id }}" />
-    
     <label for="plato{{ forloop.counter }}">{{ plato }}</label><br />
 {% endfor %}
 <input type="submit" value="Vote" />
