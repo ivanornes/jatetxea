@@ -4,7 +4,6 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^menus/$', 'menus.views.index'),
-    url(r'^menus/(?P<menu_id>\d+)/$', 'menus.views.detail'),
-    url(r'^admin/', include(admin.site.urls)),
-) 
+    url(r'^menus/', include('menus.urls')),
+    url(r'^admin/', include('admin.site.urls')),
+)
