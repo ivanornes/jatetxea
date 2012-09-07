@@ -129,8 +129,6 @@ INSTALLED_APPS = (
     'menus',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
